@@ -1,0 +1,77 @@
+.texts > p:first-child {
+  color: red;
+}
+
+.texts > p:last-child {
+  color: green;
+}
+
+input:checked {
+  outline: 1px solid red;
+}
+
+p::first-letter {
+  font-size: 18px;
+  color: blue;
+}
+
+.texts {
+  width: 300px;
+  height: 150px;
+  margin: 100px auto;
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 9px 10px 47px 1px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 16px 21px 47px 1px rgba(0, 0, 0, 0.7);
+}
+/* 
+p{
+
+} */
+
+.contact {
+  display: flex;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.contact > textarea {
+  width: 750px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.contact > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs > input {
+  width: 100%;
+  height: 59px;
+  border: 2px solid lightgrey;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+#send {
+  height: 50px;
+  font-weight: 700;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact {
+    flex-direction: column;
+  }
+}

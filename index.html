@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>ლექცია 11</title>
+  </head>
+  <body>
+    <h1>ფორმები</h1>
+
+    <hr />
+    <br />
+    <form class="contact">
+      <textarea rows="7"></textarea>
+      <div class="inputs">
+        <input type="text" placeholder="subject"/>
+        <input type="text" />
+        <input type="text" />
+        <button id="send">Send</button>
+      </div>
+    </form>
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="texts">
+      <p>პირველი</p>
+      <p>მეორე</p>
+      <p>მესამე</p>
+    </div>
+    <form>
+      <fieldset>
+        <legend>რეგისტრაცია</legend>
+        <input type="color" />
+        <input type="range" />
+        <br />
+        <br />
+        <label for="firstname">სახელი</label>
+        <input type="text" id="firstname" required placeholder="სახელი" />
+        <br />
+        <br />
+        <label for="lastname">გვარი</label>
+        <input type="text" id="lastname" required />
+        <br />
+        <br />
+        <label for="age">ასაკი</label>
+        <input type="date" id="age" required />
+        <br />
+        <br />
+        <label for="email">მეილი</label>
+        <input type="email" id="email" required placeholder="test@test.com" />
+        <br />
+        <br />
+        <label for="password">პაროლი</label>
+        <input type="password" id="password" minlength="6" required />
+        <br />
+        <br />
+        <label for="photo">ფოტო</label>
+        <input type="file" accept="image/+" id="photo" />
+        <br />
+        <br />
+        <label>ფილიალი</label>
+        <select>
+          <option value="tbilisi">თბილისი</option>
+          <option value="batumi">ბათუმი</option>
+          <option value="qutaisi">ქუთაისი</option>
+          <option value="telavi">თელავი</option>
+        </select>
+        <br />
+        <br />
+
+        <h3>აირჩიეთ თქვენი მიმართულება</h3>
+        <input type="radio" id="front" name="stack" value="front" />
+        <label for="front">Front-end</label>
+        <br />
+        <input type="radio" id="back" name="stack" value="back" />
+        <label for="back">Back-end</label>
+
+        <br />
+        <br />
+        <h3>სად ისურვებდით სამუშაო კარიერის გაგრძელებას</h3>
+        <input type="checkbox" id="google" name="facebook" value="" />
+        <label for="google">Google</label>
+        <br />
+        <input type="checkbox" id="facebook" name="facebook" value="" />
+        <label for="facebook">Facebook</label>
+        <br />
+        <br />
+
+        <h3>სამოტივაციო წერილი</h3>
+        <textarea rows="5" cols="100"></textarea>
+        <br />
+        <br />
+        <!-- <input type="submit" value="რეგისტრაცია" /> -->
+        <button type="submit">რეგისტრაცია</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
